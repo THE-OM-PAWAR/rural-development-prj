@@ -1,0 +1,217 @@
+#schemes_section{
+    width: 100%;
+    max-width: 500px;
+    background: #f2f2f2;
+}
+
+
+.scheme_main{
+    position: relative;
+    height: 60vw;
+    max-height: 289px;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-bottom: .8rem solid rgb(62, 77, 58);
+}
+.scheme_img{
+    position: absolute;
+    /* width: 100vw; */
+    max-width: 500px;
+    object-fit: cover;
+    height: 100%;
+}
+.scheme_info{
+    z-index: 2;
+    transform: translateY(45vw);
+    width:100% ;
+    height: 100%;
+    position: relative;
+    color: white;
+    background-color: #000000;
+    backdrop-filter: blur(4px);
+    font-size: 1.6rem;
+    transition: .25s;
+}
+.scheme_main:hover .scheme_info{
+    background-color: #000000b4;
+    transform: translateY(0);
+}
+.scheme_main:hover  .scheme_link , .scheme_main:hover  .scheme_disciption{
+    /* display: flex; */
+    opacity: 100%;
+}
+.scheme_main:hover .scheme_name h3{
+    padding: 1.5rem 1.3rem 2rem 1.8rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.scheme_name h3{
+    letter-spacing: .1rem;
+    padding: .7rem 1.3rem .7rem 1.8rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    transition: .1s;
+}
+.scheme_disciption{
+    /* transition: 1s ease-out .2s ease-in; */
+    transition: 1s  cubic-bezier(0.17, 0.23, 0.46, 2.27);
+    padding: .2rem 2rem;
+    font-weight: 300;
+    display: block;
+    opacity: 0%;
+}
+.scheme_link{
+    display: flex;
+    opacity: 0%;
+    position: absolute;
+    bottom: 0;
+    width:auto;
+    right: 0;
+    margin: 1.5rem  1rem;
+    justify-content: flex-end;
+    transition: 1s cubic-bezier(0.17, 0.23, 0.46, 2.27);
+}
+.scheme_link input{
+    background-color: #fff;
+    outline: none;
+    border: none;
+    padding: .6rem 1.5rem;
+    border-radius: 4rem;
+    font-size: 1.7rem;
+}
+.scheme_link input:active {
+    background-color: #f1f1f1;
+}
+
+#watch_end_of_document{
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+    z-index: 200;
+    /* transform: translateY(-4rem); */
+}
+
+  .seller_img img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+  .seller_info{
+    display: flex;
+    padding: .2rem .6rem;
+    background-color:#f6fbff;
+    max-width: 500px;
+    align-items: center;
+    width: 100%;
+  }
+  .owner_info{
+    display: flex;
+    padding: .2rem .6rem;
+    background-color:#ffffff ;
+    max-width: 500px;
+    align-items: center;
+    width: 100%;
+  }
+  .name_head{
+    font-size: large;
+    margin: auto 1rem;
+  }
+  .sale_grain_box {
+    margin: .25rem 0rem;
+    position: relative;
+    width: 100%;
+    background: #f6fbff;
+    padding: 1.5rem 1.5rem 6.2rem 1.5rem;
+    border: none;
+  } .job_box{
+    margin: .25rem 0rem;
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    padding: 1.5rem 1.5rem 6rem 1.5rem;
+    border: none;
+  }
+  .grain_info{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .seller_contact{
+    border-radius: 4rem;
+    left: 2rem;
+    position: absolute;
+    display: flex;
+    box-shadow: 0 0 8px 1px rgb(0 0 0 / 34%);
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background: rgb(19 94 175);
+    margin: 0.5rem 0;
+  }
+  .intrusted_btn{
+    border-radius: 4rem;
+    right: 2rem;
+    margin: 0.5rem;
+    color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #ffffffad;
+    font-size: 1.6rem;
+    box-shadow: 0 0 0.6rem 0 #00000057;
+  }
+  .logo_contact{
+    background-image: url("../svg/contact.svg");
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 3rem;
+    align-self: auto;
+    background-color: #ffffff;
+    background-position: center;
+    background-size: 70%;
+  }
+  .logo_like{
+    background-image: url("../svg/like.svg");
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 3rem;
+    align-self: auto;
+    background-color: #ffffff;
+    stroke: #ffffff;
+    fill: #fff;
+    background-position: center;
+    background-size: 50%;
+  }
+  .molbile_no{
+    margin: auto 2rem;
+    margin-left: 0.2rem;
+    font-size: 1.4rem;
+  }
+  .intrested{
+    margin: auto 2rem;
+    margin-left: 0.2rem;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+  }
+  .stock{
+    font-size: 1.4rem;
+  }
+
+  .grain_name_head{
+    font-size: 2rem;
+    margin: .5rem 0 ;
+  }

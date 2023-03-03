@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+          "Helvetica Neue", sans-serif;
+      }
+      html {
+        font-size: 10px;
+      }
+      body {
+        max-width: 500px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+      }
+      .seller_img img {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        border-radius: 2rem;
+      }
+      .seller_info{
+        display: flex;
+        padding: .4rem;
+        background-color:#f2f2f2 ;
+        max-width: 500px;
+        align-items: center;
+        width: 100%;
+      }
+      .name_head{
+        font-size: large;
+        margin: auto 1rem;
+      }
+      .sale_grain_box{
+        margin: .5rem 1rem;
+        position: relative;
+        width: 100%;
+        background: #f2f2f2;
+        padding: 1.5rem;
+        border: none;
+        border-radius: 1rem;
+        height: 17rem;
+      }
+      .grain_info{
+        font-size: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+      .seller_contact{
+        border-radius: 4rem;
+        right: 2rem;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #ffffff;
+        align-self: right;
+      }
+      .logo_contact{
+        background-image: url("contact.svg");
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        border-radius: 3rem;
+        align-self: auto;background-color: #ffffff;
+        background-position: center;
+        background-size: 50%;
+      }
+      .molbile_no{
+        margin: auto 2rem;
+        font-size: 1.4rem;
+      }
+      @media screen and (max-width: 400px) {
+        html {
+          font-size: 8.5px;
+        }
+      }
+      @media screen and (max-width: 300px) {
+        html {
+          font-size: 7.3px;
+        }
+      }
+    </style>
+    <title>e-commece</title>
+  </head>
+  <body>
+    <div class="sale_grain_box">
+      <div class="seller_info">
+        <div class="seller_img">
+          <img src="/1654361665706.jpg" alt="" />
+        </div>
+        <div class="seller_name">
+          <h4 class="name_head">Om Pawar</h4>
+        </div>
+      </div>
+      <div class="grain_info">
+        <div class="grain_name">
+          <h3 class="grain_name_head">wheat</h3>
+        </div>
+        <div class="grain_quantity">
+          <h3 class="quantity_head">20rs/kg</h3>
+        </div>
+      </div>
+      <div class="seller_contact">
+        <div class="logo_contact"></div>
+        <h3 class="molbile_no">7828586571</h3>
+      </div>
+    </div>
+  </body>
+</html>

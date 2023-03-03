@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/user_info.css" />
+    <title>info</title>
+
+  </head>
+  <body>
+    <div class="info_box">
+      <div class="user_img">
+        <img id="user_img_real" src="svg/contact.svg" alt="this is img" />
+      </div>
+      <div class="user_name" id="user_name">
+        <h3></h3>
+      </div>
+      <div class="btns_controls">
+        <div class="domain_type2" id="liked_Item">
+          <a href="#"><button value="liked_item" onclick="action_user(this)" class="domain_btn2">liked_Item</button></a>
+        </div>
+        <div class="domain_type2">
+          <a href="/Addprds">
+            <button class="domain_btn2">Add product</button>
+          </a>
+        </div>
+        <div class="domain_type2">
+          <a href="/Addemployment">
+            <button class="domain_btn2">Add Job Post</button>
+          </a>
+        </div>*
+      </div>
+    </div>
+    <div class="selection_btn" id="selection_btn">
+      <div class="domain_type">
+        <button
+          class="domain_btn"
+          value="Employment"
+          onclick="action_user(this)">
+          Employment
+        </button>
+      </div>
+      <div class="domain_type">
+        <button
+          class="domain_btn"
+          value="E-Commerce"
+          onclick="action_user(this)"
+        >
+          E-Commerce
+        </button>
+      </div>
+     
+    </div>
+
+    <section id="User_data_sec"></section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/user_info.js"></script>
+  </body>
+</html>
+

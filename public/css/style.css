@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html {
+  font-size: 10px;
+}
+body {
+  max-width: 500px;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  
+}
+
+nav {
+  position: static;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #F1F3F6;
+  height: auto;
+  z-index: 3;
+}
+
+
+#logoOfCompany {
+  background-image: url("../svg/company.svg");
+  background-size: 95%;
+  height:auto;
+  background-repeat: no-repeat;
+  width: 13rem;
+  margin: 1rem 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+#group1{
+  background: #181F2D;
+}
+#group1 a{
+  color: #F1F3F6;
+  text-decoration: none;
+}
+.group a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.category {
+  position: sticky;
+  letter-spacing: .06rem;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  background-color: #F1F3F6;
+  height: 3.7rem;
+  overflow: scroll;
+  width: 100%;
+  z-index: 1;
+
+}
+.category::-webkit-scrollbar {
+  display: none;
+}
+.group {
+  border-radius: 3rem;
+  background-color: rgb(255, 255, 255);
+  width: max-content;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+  margin: auto .6rem;
+  padding: 0.6rem 1.6rem;
+  transition: .2s;
+  cursor: pointer;
+}
+.group:hover {
+  background-color: #181F2D;
+}
+.group:hover a{
+  color: white;
+}
+
+#selection_btn{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  width: 100%;
+  justify-content: space-between;
+}
+.domain_type{
+  background-color: #F1F3F6;
+  position: relative;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  /* width: 80%; */
+  padding: .5rem ,1rem ;
+}
+.domain_btn{
+  background-color: #ffffff;
+  box-shadow: 0 0 .2rem 0 rgba(0, 0, 0, 0.212);
+  color: rgba(0, 0, 0, 0.672);
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  padding: .5rem 1rem;
+  border-radius: 6rem;
+  margin: .3rem;
+  width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 8.5px;
+    }
+  }
+@media screen and (max-width: 300px) {
+    html{
+        font-size: 7.3px;
+    }
+  }
+
+

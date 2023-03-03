@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\modal.css" />
+    <link rel="stylesheet" href="css\menubar.css" />
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css/scheme.css" />
+
+    <title>RC home</title>
+  </head>
+  <body>
+
+        <!-- menu slidebar  -->
+
+    <!-- tempory comment -->
+    <section class="manu function_menu" id="manu_Section">
+      <div class="menuBox" id="manuBox"></div>
+    </section>
+    <!-- --------------------------------------------------------------------- -->
+    <header id="header">
+      <!-- navigation bar  -->
+      <nav>
+        <!-- logo of company from css with id-->
+        <div id="logoOfCompany"></div>
+        <div class="premanu" id="premanu">
+          <div class="manuBtn" id="searchbtn"></div>
+          <div class="manuBtn" id="manubtn" onclick="function_menu(this)"></div>
+        </div>
+        <!-- manu button -->
+        <!-- --------------------------------------------------------------------- -->
+      </nav>
+    </header>
+
+    <!-------------|| DINAMICALLY GENERATED MODAL PAGE ARE HERE ||------------->
+
+    <div class="selection_btn" id="selection_btn">
+      <div class="domain_type">
+        <button class="domain_btn" onclick="action_domain(this)">Employment</button>
+      </div>
+      <div class="domain_type">
+        <button class="domain_btn" onclick="action_domain(this)">E-Commerce</button>
+      </div> 
+      <div class="domain_type">
+        <button class="domain_btn" onclick="action_domain(this)">Schemes</button>
+      </div>
+    </div>
+
+    <section class="schemes_section" id="schemes_section">
+      <div class="sale_grain_box">
+        <div class="seller_info">
+          <div class="seller_img">
+            <img src="uploads/1654361665706.jpg" alt="" />
+          </div>
+          <div class="seller_name">
+            <h4 class="name_head">Om Pawar</h4>
+          </div>
+        </div>
+        <div class="grain_info">
+          <div class="grain_name">
+            <h3 class="grain_name_head">wheat</h3>
+            <p class="stock">200kg in stock</p>
+          </div>
+          <div class="grain_quantity">
+            <h3 class="quantity_head">20rs/kg</h3>
+          </div>
+        </div>
+        <div class="seller_contact">
+          <div class="logo_contact"></div>
+          <h3 class="molbile_no">7828586571</h3>
+        </div>
+        <div class="intrusted_btn">
+          <div class="logo_like"></div>
+          <h3 class="intrested">Intrusted</h3>
+        </div>
+      </div>
+    </section>
+    <!------------------- || END OF MODAL PAGE ||---------------------->
+
+
+    <!-- INDECATIOR FOR LAZY LOAD FUNCTION -->
+    <p id="watch_end_of_document"></p>
+    <p id="watch_end_of_document2"></p>
+    <!-------------------------------------->
+
+
+
+
+
+    <!-------------|| DINAMICALLY GENERATED MODAL PAGE ARE HERE ||------------->
+    <section class="modal_main" id="modal_main"></section>
+    <!------------------- || END OF MODAL PAGE ||---------------------->
+
+    <!-------------|| LINKING ALL THE JAVA SCRIPT HERE ||------------->
+    <!-- <script defer src= "http://localhost:1000/socket.io/socket.io.js"></script>  -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/local.js"></script>
+    <script src="js/user_info_server.js"></script>
+    <script src="js/create_schemes.js"></script>
+    <script src="js/modal,list.js"></script>
+
+    <!--------------------|| END OF JS HERE ||---------------------->
+  </body>
+</html>
+=

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Form_user.css" />
+    <title>E-Commerce Form</title>
+  </head>
+  <body>
+    <!-------------|| SIGN IN HTML ARE HERE ||------------->
+    <section id="Login_main">
+      <div class="sign_in" id="sign_in">
+        <div class="Sign_logo" id="Sign_logo">
+          <!-- LOGO is applied using css -->
+        </div>
+
+        <!-- making form here -->
+        <form action="/signIn" method="post" id="form_signIn">
+          <!-- User Name -->
+          <p>Grain name</p>
+          <input type="text" name="grain_name" id="grain_name" required />
+          <!-- mobile number -->
+          <p>grain Quantity</p>
+          <input
+            type="number"
+            name="grain_quantity"
+            id="grain_quantity"
+            required
+          />
+          <!-- passward -->
+
+          <p>Mobile number</p>
+          <!-- buttons related div -->
+          <select name="grain_unit" id="grain_unit">
+            <option value="">--select unit--</option>
+            <option value="saab">/kg</option>
+            <option value="mercedes">/ltr</option>
+            <option value="audi">/unit</option>
+          </select>
+          <div class="btn_s">
+            <!-- cancel buttons -->
+            <a href="/" class="main_btn">
+              <input type="button" value="cancel" id="Cancel" />
+            </a>
+            <!-- submit buttons -->
+            <input
+              type="submit"
+              class="main_btn"
+              id="Sign_in_btn"
+              value="Submit"
+            />
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </body>
+</html>

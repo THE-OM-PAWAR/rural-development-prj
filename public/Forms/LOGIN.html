@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-------------|| LINKING ALL THE CSS SHEETS HERE ||------------->
+    <link rel="stylesheet" href="../css/Form_user.css">
+    <!--------------------|| END OF CSS HERE ||---------------------->
+    <title>LOGIN</title>
+  </head>
+  <body>
+    <!-------------|| LOGIN HTML ARE HERE ||------------->
+    <section id="Login_main" >
+      <div class="sign_in" id="sign_in">
+        <div class="Sign_logo" id="Sign_logo"><!-- LOGO is applied using css --></div>
+        
+        <!-- making form here -->
+        <form action="/logIn" method="post" id="form_signIn">
+          <!-- user mobile number -->
+          <p>Mobile No. </p>
+          <input type="number" name="user_mobile_No" id="user_mobile_No" required>
+          <!-- user passward -->
+          <p>Passward</p>
+          <input type="password" name="password" id="password" required>
+          
+          <!-- buttons related div -->
+          <div class="btn_s" class="main_btn">
+            <!-- cancel buttons -->
+            <a href="/"  class="main_btn">
+              <input type="button" value="cancel" id="Cancel"   >
+            </a>
+            <!-- submit buttons -->
+            <input type="submit"id="Sign_in_btn" class="main_btn" value="log in">
+          </div>
+        </form>
+      </div>
+
+      
+      <!-------------|| GIVING OPTION FOR SIGNIN ARE HERE ||------------->
+      <div class="sign_in" id="sign_in" >
+        <p> create a new account </p>
+        <a href="/signIn">
+          <input type="submit" id="sign_in_btnO" value="Sign in">
+        </a>
+      </div>
+      <!-------------|| GIVING OPTION FOR SIGNIN ARE HERE ||------------->
+
+
+    </section>
+    <!-------------|| LOGIN HTML END ARE HERE ||------------->
+
+
+    <!-------------|| LINKING ALL THE JAVA SCRIPT HERE ||------------->
+    <script src="js/pass_verification.js"></script>
+    <!--------------------|| END OF JS HERE ||---------------------->
+  </body>
+</html>

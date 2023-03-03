@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\modal.css" />
+    <link rel="stylesheet" href="css\home_main.css" />
+
+    <title>RC people</title>
+</head>
+<body>
+    <div class="container_banners">
+        <div class="banner_front">
+            <div class="instruction_d">
+
+            </div>
+            <p class="head1"> <span>Sell</span>  your yield</p>
+            <p class="discription_1">whatever is your
+                e yield you can sell here</p>
+            <img src="uploads/1677240389357.jpg" alt="">
+        </div>
+        <div class="banner_front">
+            <div class="instruction_p">
+
+            </div>
+            <p class="head2">Place on rent</p>
+            <p class="discription_2">now you can place on rent your machines and equipments</p>
+            <img src="uploads/1677240207403.jpg" alt="">
+        </div>
+        <div class="banner_front">
+            <div class="instruction_d">
+
+            </div>
+            <p class="head1">Job in your village</p>
+            <p class="discription_1">now get jobs of your working domain.</p>
+            <img src="uploads/ba4461cd9b8b1d46dad3355329c8cfe1 (4).jpg" alt="">
+        </div>
+    </div>
+    <div class="btn_container" id="btn_container">
+        <h2>Proper account</h2>
+        <p>create a new account</p>
+        <a href="signIn">
+            <button class="Btn_inst">SIGN_IN</button>
+        </a>
+        <p>already have an account</p>
+        <a href="logIn">
+            <button class="Btn_inst">LOGIN</button>
+        </a>
+    </div>
+    <!-- -----------|| DINAMICALLY GENERATED MODAL PAGE ARE HERE ||------------->
+    <section class="modal_main" id="modal_main"></section>
+    <!------------------- || END OF MODAL PAGE ||-------------------- -->
+
+
+
+
+
+
+    <!-------------|| LINKING ALL THE JAVA SCRIPT HERE ||------------->
+    <!-- <script defer src= "http://localhost:1000/socket.io/socket.io.js"></script>  -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/modal,list.js"></script>
+    <!--------------------|| END OF JS HERE ||---------------------->
+</body>
+</html>
