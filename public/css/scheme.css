@@ -86,8 +86,8 @@
 #watch_end_of_document{
     width: 2rem;
     height: 2rem;
-    background-color: red;
-    z-index: 200;
+    background-color: rgb(255, 255, 255);
+    z-index: 00;
     /* transform: translateY(-4rem); */
 }
 

@@ -107,7 +107,7 @@ document.getElementById("User_data_sec").innerHTML=``
       <div class="grain_info">
         <div class="grain_name">
           <h3 class="grain_name_head">${element.job_name}</h3>
-          <p class="stock">${element.job_discription}kg in stock</p>
+          <p class="stock">${element.job_discription}</p>
         </div>
         <div class="grain_quantity">
           <h3 class="quantity_head">${element.job_salary}rs/kg</h3>

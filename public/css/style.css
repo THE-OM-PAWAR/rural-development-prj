@@ -6,14 +6,15 @@
 }
 html {
   font-size: 10px;
+  background-color: #fbfbfb;
 }
 body {
   max-width: 500px;
   height:100vh;
   display: flex;
+  /* padding-top: 6rem; */
   flex-direction: column;
   margin: auto;
-  
 }
 
 nav {
@@ -89,10 +90,15 @@ nav {
 }
 
 #selection_btn{
+  position: sticky;
+  top: 0;
   display: grid;
+  padding: .5rem 0 ;
   grid-template-columns: 1fr 1fr 1fr ;
   width: 100%;
   justify-content: space-between;
+  background: #F1F3F6;
+  
 }
 .domain_type{
   background-color: #F1F3F6;
@@ -100,27 +106,57 @@ nav {
   margin: 0;
   display: flex;
   align-items: center;
-  /* width: 80%; */
   padding: .5rem ,1rem ;
 }
 .domain_btn{
-  background-color: #ffffff;
+  background: #ffffff;
   box-shadow: 0 0 .2rem 0 rgba(0, 0, 0, 0.212);
   color: rgba(0, 0, 0, 0.672);
   border: none;
   outline: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   letter-spacing: .1rem;
   font-weight: 600;
-  padding: .5rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 6rem;
   margin: .3rem;
   width: 100%;
 }
 
 
-
-
+#board{
+  transition: .3s;
+width: 100%;
+max-width: 500px;
+background: rgb(255, 255, 255);
+}
+.notice{
+  max-width: 45px;
+  width: auto;  
+  margin: 2.2rem;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  color: #135eaf ;
+}
+.notice_box{
+  width: auto;  
+  border-radius: .5rem;
+  margin: 2.2rem;
+  padding: 1rem;
+  background: #F1F3F6;
+  font-size: 1.7rem;
+}
+span{
+  color: #135eaf;
+  font-weight: 600;
+}
+.hide{
+  display: none;
+}
+.notice h3 { 
+  font-size: 3.5rem;
+}
 @media screen and (max-width: 400px) {
     html{
         font-size: 8.5px;

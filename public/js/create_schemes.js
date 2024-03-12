@@ -154,7 +154,16 @@ socket.on("take_Employment", (data) => {
 let selection;
 let count = 0;
 const action_domain = (element) => {
-  // console.log()
+  if (document.getElementById("container_disgin")) {
+    document.getElementById("container_disgin").remove()
+  }
+  let for_clear =  document.getElementsByClassName("domain_btn")
+  Array.from(for_clear).forEach(element=>{
+    element.style.background = "#ffffff "
+    element.style.color = "#000000 "
+  })
+  element.style.background = "#135eaf "
+  element.style.color = "#ffffff "
   count = 0;
   if (element.textContent == "Employment") {
     selection = "Employment";
@@ -167,7 +176,9 @@ const action_domain = (element) => {
     socket.emit("send_prd");
   }
 };
-
+setTimeout(() => {
+  action_domain(document.getElementsByClassName("domain_btn")[Math.floor(Math.random()*3)])
+}, 800);
 // ------------ IntersectionObserver for following lazy loading------------//
 const iso = new IntersectionObserver((entries) => {
   // console.log(selection)

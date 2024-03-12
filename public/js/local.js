@@ -1,11 +1,11 @@
 // ============== menu function code ==============//
-const socket = io()
+const socket = io();
 let menucount = 0;
 const function_menu = (element) => {
   menucount++;
   if (menucount === 1) {
     socket.emit("menu-please", info);
-    console.log(info)
+    console.log(info);
   }
 
   let menu_section = document.getElementById("manu_Section");
@@ -29,7 +29,7 @@ modalWrapper.addEventListener("click", function (e) {
 
 // getting the menu from here
 socket.on("take-menu", (menu) => {
-  console.log(menu)
+  console.log(menu);
   let menuBtnC = document.createElement("div");
   menuBtnC.className = "menuBtnC";
   menuBtnC.id = "menuBtnC";
@@ -58,13 +58,13 @@ socket.on("take-menu", (menu) => {
 // function for all menu option onclick
 let btn_func = async (element) => {
   if (element.id === "logIn") {
-    window.open(`/${element.id}` , "_self")
-}else if(element.id === "signIn"){
-    window.open(`http://localhost:8000/${element.id}` , "_self")
-  }else if(element.id === "AddSchemes"){
-    window.open(`/${element.id}` , "_self")
-  }else if(element.id === "userPage"){
-    window.open(`/${element.id}` , "_self")
+    window.open(`/${element.id}`, "_self");
+  } else if (element.id === "signIn") {
+    window.open(`http://localhost:8000/${element.id}`, "_self");
+  } else if (element.id === "AddSchemes") {
+    window.open(`/${element.id}`, "_self");
+  } else if (element.id === "userPage") {
+    window.open(`/${element.id}`, "_self");
   } else {
     console.log(element.id);
     // call server for require options
@@ -81,5 +81,3 @@ let btn_func = async (element) => {
     }
   }
 };
-
-

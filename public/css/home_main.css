@@ -39,16 +39,19 @@ body {
     width: 100vw;
     height: calc(100vw * 1.4);
     background: red;
+    max-width: 500px;
 }
 .banner_front img {
     width: 100%;
     object-fit: cover;
     height: 100%;
+    max-height: 1000px;
 }
 .btn_container{
+  
     width: 100%;
     padding: 4rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 245, 245);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,6 +59,7 @@ body {
 }
 .Btn_inst{
     width: 50vw;
+    max-width: 280px;
     background-color: rgb(19, 94, 175);
     color: white;
     font-size: 1.6rem;
@@ -134,5 +138,31 @@ body {
 @media screen and (max-width: 300px) {
   html {
     font-size: 7.3px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .container_banners{
+    display: none;
+  }
+  html {
+    font-size: 16px;
+  }
+  body{
+    background-image: url("../uploads/167724038935722\new.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover ;
+
+  }
+  .btn_container{
+    position: absolute;
+    top: 40rem;
+    right: 20rem;
+    backdrop-filter: blur(8px);
+    border-radius: 2rem;
+    background: #ffffff5f;
+    margin-left: auto;
+    max-width: 700px;
   }
 }

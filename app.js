@@ -1,4 +1,4 @@
-// //============= Require Module are here ============//
+//============= Require Module are here ============//
 
 require("dotenv").config();
 const express = require("express");
@@ -14,7 +14,7 @@ const jwt = require("jsonwebtoken");
 const port = 8000;
 const authentication = require("./module/authentication");
 const home_auth = require("./module/home_auth");
-const { users } = require("./module/user_module");
+const { users } = require("./module/User_Module");
 const bcrypt = require("bcryptjs/dist/bcrypt");
 const { Schemes_collection } = require("./module/Scheme.js");
 const { product_scheme } = require("./module/grain_FS");
@@ -617,6 +617,23 @@ io.on("connection", async (socket) => {
           grain_quantity:element.grain_quantity,
           selling_price:element.selling_price,
           grain_unit:element.grain_unit
+        }
+        socket.emit("take_data", obj);
+        // new
+      }
+    })
+      user.user_Job_Post.forEach((element) => {
+      if (element.upload_date == data2) {
+        console.log(element)
+        // new
+        let obj = {
+          people_name : user.user_name,
+          people_mobile : user.user_mobile,
+          people_img : user.profile_img,
+          job_name: element.job_name,
+          job_discription:element.job_discription,
+          job_salary:element.job_salary,
+          job_unit:element.job_unit
         }
         socket.emit("take_data", obj);
         // new

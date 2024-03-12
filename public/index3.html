@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css\menubar.css" />
     <link rel="stylesheet" href="css\style.css" />
     <link rel="stylesheet" href="css/scheme.css" />
+    <link rel="stylesheet" href="css/desgin.css" />
 
     <title>RC home</title>
   </head>
@@ -26,6 +27,7 @@
         <!-- logo of company from css with id-->
         <div id="logoOfCompany"></div>
         <div class="premanu" id="premanu">
+          <div class="manuBtn" id="noticebtn"></div>
           <div class="manuBtn" id="searchbtn"></div>
           <div class="manuBtn" id="manubtn" onclick="function_menu(this)"></div>
         </div>
@@ -35,7 +37,34 @@
     </header>
 
     <!-------------|| DINAMICALLY GENERATED MODAL PAGE ARE HERE ||------------->
-
+    <section class="hide" id="board">
+      <div class="notice" id="notice">
+        <h3>Notice</h3>
+      </div>
+      <div class="notice_box">
+        <h2>Wheat rate</h2>
+        today rate of wheat increased from <span>20rs</span> to <span>25rs pre kg</span>
+        <br>
+        this is the height in two years
+      </div>
+      <div class="notice_box">
+        <h2>BPL Ration</h2>
+        Next Ration distribution event on <span>12/3/2023</span>  to <span>12/3/2023</span> 
+      </div>
+      <div class="notice_box">
+        <h2>Creators</h2>
+        this website is created by <span>4 CS Student</span> 
+        <br>
+        <span>Akshay</span> 
+        <br>
+        <span>Arzoo</span> 
+        <br>
+        <span>Akshay</span> 
+        <br>
+        <span>Akshay</span> 
+      </div>
+    </section>
+    
     <div class="selection_btn" id="selection_btn">
       <div class="domain_type">
         <button class="domain_btn" onclick="action_domain(this)">Employment</button>
@@ -47,35 +76,7 @@
         <button class="domain_btn" onclick="action_domain(this)">Schemes</button>
       </div>
     </div>
-
     <section class="schemes_section" id="schemes_section">
-      <div class="sale_grain_box">
-        <div class="seller_info">
-          <div class="seller_img">
-            <img src="uploads/1654361665706.jpg" alt="" />
-          </div>
-          <div class="seller_name">
-            <h4 class="name_head">Om Pawar</h4>
-          </div>
-        </div>
-        <div class="grain_info">
-          <div class="grain_name">
-            <h3 class="grain_name_head">wheat</h3>
-            <p class="stock">200kg in stock</p>
-          </div>
-          <div class="grain_quantity">
-            <h3 class="quantity_head">20rs/kg</h3>
-          </div>
-        </div>
-        <div class="seller_contact">
-          <div class="logo_contact"></div>
-          <h3 class="molbile_no">7828586571</h3>
-        </div>
-        <div class="intrusted_btn">
-          <div class="logo_like"></div>
-          <h3 class="intrested">Intrusted</h3>
-        </div>
-      </div>
     </section>
     <!------------------- || END OF MODAL PAGE ||---------------------->
 
@@ -85,7 +86,30 @@
     <p id="watch_end_of_document2"></p>
     <!-------------------------------------->
 
-
+    <div class="container_disgin" id="container_disgin">
+      <div class="discription">
+        A <span class="red">Proper</span> website for rural bussines of peoples <span class="red
+        ">by</span>
+      </div>
+      <div class="container_creater">
+        <div class="creaters_sec">
+          <div class="creater_img" id="_1_"></div>
+          <div class="creater_name"><p>Akshay</p></div>
+        </div>
+        <div class="creaters_sec">
+          <div class="creater_img" id="_2_"></div>
+          <div class="creater_name">Akshay</div>
+        </div>
+        <div class="creaters_sec">
+          <div class="creater_img" id="_3_"></div>
+          <div class="creater_name">Akshay</div>
+        </div>
+        <div class="creaters_sec">
+          <div class="creater_img" id="_4_"></div>
+          <div class="creater_name">Akshay</div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -104,4 +128,3 @@
     <!--------------------|| END OF JS HERE ||---------------------->
   </body>
 </html>
-=

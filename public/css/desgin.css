@@ -1,0 +1,94 @@
+.container_disgin{
+    background-image: url("../svg/company.svg");
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    opacity: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.discription{
+    position: absolute;
+    transform: translateY(calc(100vw - 83vw) );
+    font-size: 1.6rem;
+    opacity: 70%;
+}
+.red{
+    color: red;
+    font-size: 2rem;
+    padding: .3rem;
+}
+.container_creater{
+    transform: translateY(calc(100vw - 73vw) );
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.creaters_sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.creater_img{
+    background-position: center;
+    /* object-fit: cover; */
+    background-size: cover;
+    background-position: center;
+    width: 2rem;
+    margin: .5rem;
+    border-radius: 5rem;
+    height: 2rem;
+}
+.creater_name{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem;
+}
+
+#_1_{
+    background-image: url("../uploads/undefined.svg");
+    
+}
+#_2_{
+    background-image: url("../uploads/undefined.svg");
+    
+}
+#_3_{
+    background-image: url("../uploads/undefined.svg");
+    
+}
+#_4_{
+    background-image: url("../uploads/undefined.svg");
+
+}
+
+@media screen and (max-width: 400px) {
+    .discription{
+        font-size: 1.2rem;
+    }
+  }
+
+@media screen and (min-width: 500px) {
+    .container_creater{
+        transform: translateY(calc(500px - 350px) );
+    }
+    .discription{
+        transform: translateY(100px );
+    }
+  }
+  

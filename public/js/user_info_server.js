@@ -13,7 +13,8 @@ const user_data = async () =>{
       modal_main.innerHTML = modal_html
       modal_js()
     },6000)
-    table_body.style.display = "none"
+    console.log(table_body)
+    // table_body.style.display = "none"
     return data
   }else if (data.position == "user") {
     info = "loged_in"
